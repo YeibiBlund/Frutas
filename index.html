@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .borde {
+            border: solid 1px;
+        }
+
+        .ancho {
+            width: 85%;
+        }
+
+        .fondo {}
+
+        .tamanio {
+            width: 70px;
+            height: 70px;
+        }
+
+        .fondo {
+            background-image: url('img/fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+        .fondoRegistro {
+            background-color: rgba(184, 201, 216, 0.621);
+        }
+
+        .fondoFrutas {
+            background-color: rgba(169, 237, 185, 0.774);
+        }
+
+        .fondoBlanco {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .texto{
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body class="fondo">
+
+    <h1 class="text-center mb-4 mt-2 fondoBlanco borde w-50 mx-auto">FRUTERIA</h1>
+
+    <div class="row mt-4 w-75 borde mx-auto">
+
+
+        <div class="col-md-4 col-sm-12 borde fondoRegistro">
+            <h5 class="text-center mt-2 texto">Registrar Fruta</h5>
+            <form role="form">
+                <div class="form-group mt-3 borde">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group mt-1 borde">
+                    <input type="number" class="form-control" placeholder="Cantidad">
+                </div>
+                <div class="form-group mt-1 borde">
+                    <input type="text" class="form-control" placeholder="Region">
+                </div>
+                <div class="form-group mt-1 borde">
+                    <input type="number" class="form-control" placeholder="Precio">
+                </div>
+                <div class="form-group mt-1 mb-2 d-flex justify-content-end mt-2 ">
+                    <button type="submit" class="btn btn-info btn-lg fondoBlanco">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-8 col-sm-12  borde fondoFrutas">
+            <div class="col-12 fondoSpain texto">Frutas de España</div>
+            <div class="col-12 d-flex justify-content-between borde mt-1 mb-1 fondoBlanco">
+                <img class="tamanio" src="img/manzana.png" alt="">
+                <img class="mt-5 tamanio" src="img/pera.png" alt="">
+                <img class="tamanio" src="img/platano.png" alt="">
+
+            </div>
+            <div class="col-12 texto">Frutas de Australia</div>
+            <div class="col-12 d-flex justify-content-around borde mt-1 mb-1 fondoBlanco">
+                <img class="tamanio" src="img/papaya.png" alt="">
+                <img class="tamanio" src="img/mango.png" alt="">
+                <img class="tamanio" src="img/kiwi.png" alt="">
+
+            </div>
+
+            <div class="col-12 texto">Frutas Tropicales</div>
+            <div class="row ancho mx-auto">
+                <div class="col-6 borde mt-1 mb-1 text-center fondoBlanco">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="tamanio mt-1 mb-1" src="img/ft1.png" alt="">
+                        </div>
+                        <div class="col-12">
+                            <img class="tamanio mt-1 mb-1" src="img/ft2.png" alt="">
+                        </div>
+                        <div class="col-12">
+                            <img class="tamanio mt-1 mb-1" src="img/ft3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 borde mt-1 mb-1 text-center fondoBlanco">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img class="tamanio mt-1 mb-1" src="img/ft4.png" alt="">
+                                </div>
+                                <div class="col-12">
+                                    <img class="tamanio mt-1 mb-1" src="img/ft5.png" alt="">
+                                </div>
+                                <div class="col-12">
+                                    <img class="tamanio mt-1 mb-1" src="img/ft6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
